@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for portfolio */
+
+body {
+  @apply bg-primary text-white font-sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  @apply text-[#915eff] hover:text-[#6b4eff] transition-colors duration-300;
+  text-decoration: none;
+}
+
+section {
+  @apply py-20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+button {
+  @apply bg-[#915eff] text-white py-2 px-4 rounded hover:bg-[#6b4eff] transition-colors duration-300;
+  border: none;
+  cursor: pointer;
+}
+
+.canvas-loader {
+  @apply flex flex-col items-center justify-center;
+}
+
+.canvas-load {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid #f1f1f1;
+  border-top: 5px solid transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Scroll to top button styles */
+.scroll-to-top {
+  @apply fixed bottom-5 right-5 bg-[#915eff] text-white p-3 rounded-full shadow-lg cursor-pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  @apply bg-[#6b4eff];
+}
+</create_file>
